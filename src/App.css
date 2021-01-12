@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* header */
+.header{
+  background: linear-gradient(to bottom right, #cc3300 0%, #000066 100%);
   color: white;
+  padding: 50px;
+  text-align: center;
+  
+}
+h1{
+  font-family: sans-serif;
+  margin: 0px;
+}
+body{
+  margin: 0px;
+  color: white;
+
+}
+p{
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+/* main app */
+input{
+  height: 30px;
+  width: 400px;
+  margin: 30px;
+  border-radius: 5px;
+  border-style: none;
+  font-size: large;
+  
+
+}
+input:focus{
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.appBody{
+ text-align: center;
+ padding: 30px;
+}
+
+
+
+/* cards */
+.todoCard-notDone{
+  background: linear-gradient(to bottom right, #cc3300 0%, #000066 100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.todoCard-done{
+  text-decoration: line-through;
+  background: linear-gradient(to bottom right, #cc3300 0%, #000066 100%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.add-button{
+  height: 38px;
+  width: 150px;
+  background-color: green;
+  border-radius: 2px;
+  border-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  
+}
+.add-button:hover{
+  border-style: groove;
+  border-color: #cc3300;
+}
+
+.small-btn{
+  background: linear-gradient(to bottom right, #cc3300 0%, #000066 100%);
+  color: white;
+  height: 30px;
+  border-radius: 2px;
+  margin: 5px;
+  border-style: none;
+}
+
+.small-btn:focus{
+  outline: none;
+}
+
+.reset-btn{
+  background-color: #cc3300;
+  color: white;
+  height: 30px;
+  border-radius: 2px;
+  margin: 10px 100% 0px 30px;
+  border-style: none; 
+  margin-right: 100%;
+  width: 100px;
+}
+
+.editMode{
+  width: 300px;
 }
